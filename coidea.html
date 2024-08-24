@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coidea.css">
+    <title>Document</title>
+</head>
+<body> 
+   
+    <h1>Aceita namorar comigo?</h1>
+    
+        <div class="button">
+            <button class="comic-button" id="sim" onclick="sim()">Sim</button>
+            <button class="comic-button2" id="nao" onclick="moveButtom()">Nâo</button>
+        </div>
+</body>
+<script>
+    function sim(){
+        alert ("Parabéns! Você aceitou namorar comigo! :)")
+
+    }
+    
+    function moveButtom() {
+        let buttonN= document.getElementById("nao");
+        let widthN = window.innerWidth;
+        let heightN = window.innerHeight;
+        let leftN = Math.random() * (widthN - 100);
+        let topN = Math.random() * (heightN - 50);
+        buttonN.style.position = ' absolute ';
+        buttonN.style.left = leftN + 'px';
+        buttonN.style.top = topN + 'px';
+    }        
+
+</script>
+</html>
